@@ -6,4 +6,5 @@
   * Fixed an issue on .travis.yml file,
   * First release candidate,
   * Fixed an issue on .npmignore,
+  * Second release candidate,
   * ...,

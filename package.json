@@ -1,6 +1,6 @@
 {
   "name": "@mobilabs/pixar",
-  "version": "1.0.0-alpha.1",
+  "version": "0.0.0-alpha.1",
   "description": "A boilerplate to build simple Web Apps relying on Kadoo",
   "main": "",
   "bin": {

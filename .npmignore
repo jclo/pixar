@@ -16,5 +16,7 @@
 !tasks/**/*
 !test/**/*
 
+!.eslintrc
+!.travis.yml
 !gulpfile.js
 !index.js

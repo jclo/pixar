@@ -8,4 +8,5 @@
   * Fixed an issue on .npmignore,
   * Second release candidate,
   * Updated the project dependencies,
+  * Third release candidate,
   * ...,

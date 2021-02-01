@@ -8,7 +8,7 @@
  *
  * The MIT License (MIT)
  *
- * Copyright (c) 2020 Mobilabs <contact@mobilabs.fr> (http://www.mobilabs.fr)
+ * Copyright (c) 2021 Mobilabs <contact@mobilabs.fr> (http://www.mobilabs.fr)
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -348,7 +348,11 @@ function _customize(source, dest, app, owner, boilerlib) {
   delete pack.dependencies['@mobilabs/kasar'];
   delete pack.dependencies.nopt;
   delete pack.dependencies.shelljs;
-  delete pack.devDependencies['@mobilabs/es6kadoo'];
+  if (boilerlib === 'Pixar') {
+    delete pack.devDependencies['@mobilabs/es6kadoo'];
+  } else {
+    delete pack.devDependencies['@mobilabs/es6pakket'];
+  }
 
   process.stdout.write(`  updated ${npm}\n`);
   json.stdout = JSON.stringify(pack, null, 2);

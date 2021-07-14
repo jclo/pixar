@@ -7,15 +7,13 @@
 
 
 // -- Local Modules
-const // Pixar = require('../index')
-    Pixar     = require('../public/src/main').default
-    // , pack    = require('../package.json')
-    , testlib = require('./int/lib')
+const testlib = require('./int/lib')
+    , pack    = require('../package.json')
     ;
 
 
 // -- Local Constants
-// const libname = 'Pixar';
+const libname = 'Pixar';
 
 
 // -- Local Variables
@@ -23,14 +21,22 @@ const // Pixar = require('../index')
 
 // -- Main
 
+// This define root for Node.js:
+global.root = {};
+
 // Nota:
-// If you choose 'Pixar = require('../index')', 'display-coverage' will
-// show the coverage of all the library in one file.
+// If you want that 'display-coverage' shows the coverage files by files,
+// you should set 'Pixar' and 'testlib' like this:
+//  . const Pixar = require('../src/<file>').default;
+//  . testlib(Pixar, '{{lib:name}}', '{{lib:version}}', 'without new');
 //
-// If you want to display the coverage file by file, you must choose
-// 'Pixar = require('../src/prototypal').default'. But, in this case,
-// the build isn't done, so you should pass '{{lib:name}}' as libname and
-// '{{lib:version}}' as the library version.
+// But, if you want that 'display-coverage' shows the coverage in one file,
+// you should set 'Pixar' and 'testlib' like this:
+//  . const Pixar = require('../index');
+//  . testlib(Pixar, libname, pack.version, 'without new');
+
+const Pixar = require('../public/src/main').default;
+// const Pixar = require('../index');
 
 describe('Test Pixar:', () => {
   testlib(Pixar, '{{lib:name}}', '{{lib:version}}', 'without new');

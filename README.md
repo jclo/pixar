@@ -135,7 +135,7 @@ Enjoy!
 [npm-url]: https://www.npmjs.com/package/@mobilabs/pixar
 [release-url]: https://github.com/jclo/pixar/tags
 [commit-url]: https://github.com/jclo/pixar/commits/master
-[travis-url]: https://travis-ci.org/jclo/pixar
+[travis-url]: https://travis-ci.com/jclo/pixar
 [coveralls-url]: https://coveralls.io/github/jclo/pixar?branch=master
 [dependencies-url]: https://david-dm.org/jclo/pixar
 [devdependencies-url]: https://david-dm.org/jclo/pixar?type=dev

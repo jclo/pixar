@@ -12,4 +12,4 @@
   * Updated the project dependencies,
   * Fourth release candidate,
   * Updated the project dependencies,
-  * ...,
+  * Release.

@@ -4,9 +4,9 @@
 [![GitHub last commit][commit-image]][commit-url]
 [![Travis CI][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
-[![Dependencies status][dependencies-image]][dependencies-url]
-[![Dev Dependencies status][devdependencies-image]][devdependencies-url]
 [![License][license-image]](LICENSE.md)
+<!-- [![Dependencies status][dependencies-image]][dependencies-url]
+[![Dev Dependencies status][devdependencies-image]][devdependencies-url] -->
 
 `Pixar` is a boilerplate for writing a simple Web App or a PWA App relying on the bundler `Kadoo`.
 
@@ -22,9 +22,9 @@ Then, you just need to create a `package.json` file that contains:
   "name": "NameOfYourProject",
   "scripts": {
     "create": "npm install @mobilabs/pixar && npm run populate",
-    "populate": "pixarpulsar populate --name ${npm_package_name} --author \"${npm_package_writer_name}\" --acronym ${npm_package_writer_acronym} --email ${npm_package_writer_email} --url ${npm_package_writer_url} && npm install && npm run build && npm run test && npm run report && npm run dev"
+    "populate": "pixarpulsar populate --name $npm_package_name --author $npm_package_config_name --acronym $npm_package_config_acronym --email $npm_package_config_email --url $npm_package_config_url && npm install && npm run build && npm run test && npm run report && npm run dev"
   },
-  "writer": {
+  "config": {
     "name": "John Doe",
     "acronym": "jdo",
     "email": "jdo@johndoe.com",
@@ -122,20 +122,20 @@ Enjoy!
 
 <!--- URls -->
 
-[npm-image]: https://img.shields.io/npm/v/@mobilabs/pixar.svg?style=flat-square
-[release-image]: https://img.shields.io/github/release/jclo/pixar.svg?include_prereleases&style=flat-square
-[commit-image]: https://img.shields.io/github/last-commit/jclo/pixar.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/jclo/pixar.svg?style=flat-square
-[coveralls-image]: https://img.shields.io/coveralls/jclo/pixar/master.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/@mobilabs/pixar.svg?logo=npm&logoColor=fff&label=NPM+package
+[release-image]: https://img.shields.io/github/release/jclo/pixar.svg?include_prereleases
+[commit-image]: https://img.shields.io/github/last-commit/jclo/pixar.svg?logo=github
+[travis-image]: https://img.shields.io/travis/com/jclo/pixar.svg?logo=travis-ci&logoColor=fff
+[coveralls-image]: https://img.shields.io/coveralls/jclo/pixar/master.svg?&logo=coveralls
 [dependencies-image]: https://david-dm.org/jclo/pixar/status.svg?theme=shields.io
 [devdependencies-image]: https://david-dm.org/jclo/pixar/dev-status.svg?theme=shields.io
-[npm-bundle-size-image]: https://img.shields.io/bundlephobia/minzip/@mobilabs/pixar.svg?style=flat-square
-[license-image]: https://img.shields.io/npm/l/@mobilabs/pixar.svg?style=flat-square
+[npm-bundle-size-image]: https://img.shields.io/bundlephobia/minzip/@mobilabs/pixar.svg
+[license-image]: https://img.shields.io/npm/l/@mobilabs/pixar.svg
 
 [npm-url]: https://www.npmjs.com/package/@mobilabs/pixar
 [release-url]: https://github.com/jclo/pixar/tags
 [commit-url]: https://github.com/jclo/pixar/commits/master
-[travis-url]: https://travis-ci.com/jclo/pixar
+[travis-url]: https://app.travis-ci.com/jclo/pixar?branch=main
 [coveralls-url]: https://coveralls.io/github/jclo/pixar?branch=master
 [dependencies-url]: https://david-dm.org/jclo/pixar
 [devdependencies-url]: https://david-dm.org/jclo/pixar?type=dev
